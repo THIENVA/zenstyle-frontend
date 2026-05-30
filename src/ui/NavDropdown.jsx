@@ -21,8 +21,7 @@ export default function NavDropdown({ item }) {
       <Button
         onClick={() => setOpen(!open)}
         variant="secondary"
-        style={{ writingMode: "horizontal-tb" }}
-        className={`items-center font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200 bg-[var(--color-zen-accent)] text-[var(--color-zen-text-light)] ${open ? "text-[var(--color-zen-text-light)]" : "hover:text-[var(--color-zen-text-light)] hover:bg-[var(--color-zen-button-1)]"}`}
+        className={`rounded-none w-32 h-10 border-r items-center font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200 border-[var(--color-zen-accent)] bg-transparent text-[var(--color-zen-accent)] ${open ? "text-[var(--color-zen-text-light)]" : "hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)]"}`}
       >
         {item.label}
         <svg

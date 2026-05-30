@@ -7,7 +7,7 @@ export default function NavButton({ item }) {
       {({ isActive }) => (
         <Button
           variant="secondary"
-          className={`font-[var(--font-logo)] text-base tracking-wide px-3 bg-[var(--color-zen-accent)] text-[var(--color-zen-text-light)] ${isActive ? " text-[var(--color-zen-text-light)] " : " hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-button-1)] "}`}
+          className={`rounded-none w-32 h-10 border-r font-[var(--font-logo)] text-base tracking-wide px-3 border-[var(--color-zen-accent)] text-[var(--color-zen-accent)] bg-transparent  hover:bg-[var(--color-zen-accent)] text-[var(--color-zen-accent)] ${isActive ? " text-[var(--color-zen-text-light)] " : " hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)] "}`}
         >
           {item.label}
         </Button>
