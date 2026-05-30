@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import { NavButton, NavDropdown, SearchBar, LoginButton } from "../../ui";
+import { NavButton, NavDropdown, LoginButton } from "../../ui";
 
 const NAV_ITEMS = [
   { label: "VỀ CHÚNG TÔI", path: "/ve-chung-toi", type: "link" },
@@ -19,13 +19,13 @@ const NAV_ITEMS = [
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-[var-(--color-primary)] border-b border-[var(--color-primary-light)]">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex item-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* ── Logo ── */}
         <NavLink to="/" className="shrink-0">
           <img
-            src=""
+            src="/public/ZenStyle.jpg"
             alt="ZenStyle"
-            className="h-10 w-auto object-contain"
+            className="h-16 w-auto object-contain"
             onError={(e) => {
               e.target.style.display = "none";
               e.target.nextSibling.style.display = "block";
@@ -45,7 +45,6 @@ export default function Header() {
 
         {/* ── Actions ── */}
         <div className="flex items-center gap-3 shrink-0">
-          <SearchBar />
           <LoginButton onClick={() => console.log("login clicked")} />
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
+import { Button } from "@/components/ui/button";
 
 export default function NavDropdown({ item }) {
   const [open, setOpen] = useState(false);
@@ -17,9 +18,11 @@ export default function NavDropdown({ item }) {
 
   return (
     <div ref={ref} className="relative">
-      <button
+      <Button
         onClick={() => setOpen(!open)}
-        className={`flex items-center gap-1 font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200 ${open ? "text-[var(--color-accent)]" : "text-[var(--color-text-light)] hover:text-[var(--color-accent)]"}`}
+        variant="secondary"
+        style={{ writingMode: "horizontal-tb" }}
+        className={`items-center font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200 bg-[var(--color-zen-accent)] text-[var(--color-zen-text-light)] ${open ? "text-[var(--color-zen-text-light)]" : "hover:text-[var(--color-zen-text-light)] hover:bg-[var(--color-zen-button-1)]"}`}
       >
         {item.label}
         <svg
@@ -36,28 +39,27 @@ export default function NavDropdown({ item }) {
             d="M19 91-7 7-7-7"
           />
         </svg>
-      </button>
+      </Button>
 
       {open && (
         <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 min-w-48 py-2 rounded-[var(--radius-md)] bg-[var(--color-surface)] border border-[var(--color-primary-light)] shadow-lg shadow-black/30 z-50">
-          <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rotate-45 bg-[var(--color-primary-light)]">
-            {item.children.map((child) => (
-              <NavLink
-                key={child.path}
-                to={child.path}
-                onClick={() => setOpen()}
-                className={({ isActive }) =>
-                  `block px-4 py-2.5 font-[var(--font-logo)] text-sm tracking-wide transition-colors duration-150 ${
-                    isActive
-                      ? "text-[var(--color-accent)] bg-[var(--color-primary-light)]"
-                      : "text-[var(--color-text-light)] hover:text-[var(--color-accent)] hover:bg-[var(--color-primary-light)]"
-                  }`
-                }
-              >
-                {child.label}
-              </NavLink>
-            ))}
-          </div>
+          <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rotate-45 bg-[var(--color-primary-light)]" />
+          {item.children.map((child) => (
+            <NavLink
+              key={child.path}
+              to={child.path}
+              onClick={() => setOpen()}
+              className={({ isActive }) =>
+                `block px-4 py-2.5 font-[var(--font-logo)] text-sm tracking-wide transition-colors duration-150 ${
+                  isActive
+                    ? "text-[var(--color-accent)] bg-[var(--color-primary-light)]"
+                    : "text-[var(--color-text-light)] hover:text-[var(--color-accent)] hover:bg-[var(--color-primary-light)]"
+                }`
+              }
+            >
+              {child.label}
+            </NavLink>
+          ))}
         </div>
       )}
     </div>
