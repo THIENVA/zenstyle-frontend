@@ -18,14 +18,14 @@ const NAV_ITEMS = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-[var-(--color-primary)] border-b border-[var(--color-primary-light)]">
+    <header className="sticky top-0 z-50 bg-[var-(--background)]">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* ── Logo ── */}
         <NavLink to="/" className="shrink-0">
           <img
             src="/public/ZenStyle.jpg"
             alt="ZenStyle"
-            className="h-16 w-auto object-contain"
+            className="h-17 w-auto object-contain"
             onError={(e) => {
               e.target.style.display = "none";
               e.target.nextSibling.style.display = "block";

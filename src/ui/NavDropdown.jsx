@@ -21,7 +21,7 @@ export default function NavDropdown({ item }) {
       <Button
         onClick={() => setOpen(!open)}
         variant="secondary"
-        className={`rounded-none w-32 h-10 border-r items-center font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200 border-[var(--color-zen-accent)] bg-transparent text-[var(--color-zen-accent)] ${open ? "text-[var(--color-zen-text-light)]" : "hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)]"}`}
+        className={`rounded-none w-32 h-10 border-r items-center font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200 border-[var(--color-zen-primary)] text-[var(--color-zen-text-light)] bg-[var(--color-zen-accent)] ${open ? "text-[var(--color-zen-text-light)]" : "hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)]"}`}
       >
         {item.label}
         <svg
@@ -41,7 +41,7 @@ export default function NavDropdown({ item }) {
       </Button>
 
       {open && (
-        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 min-w-48 py-2 rounded-[var(--radius-md)] bg-[var(--color-surface)] border border-[var(--color-primary-light)] shadow-lg shadow-black/30 z-50">
+        <div className="absolute top-full left-1/2 -translate-x-1/2 mt-3 min-w-48 py-2 rounded-none bg-white border-2 border-[var(--color-xen-accent)] shadow-lg shadow-black/30 z-50">
           <div className="absolute -top-1.5 left-1/2 -translate-x-1/2 w-3 h-3 rotate-45 bg-[var(--color-primary-light)]" />
           {item.children.map((child) => (
             <NavLink
@@ -49,10 +49,10 @@ export default function NavDropdown({ item }) {
               to={child.path}
               onClick={() => setOpen()}
               className={({ isActive }) =>
-                `block px-4 py-2.5 font-[var(--font-logo)] text-sm tracking-wide transition-colors duration-150 ${
+                `block px-4 py-2.5 mx-2 my-1 border-2 border-[var(--color-zen-accent)] font-[var(--font-logo)] text-sm tracking-wide transition-colors duration-150 ${
                   isActive
-                    ? "text-[var(--color-accent)] bg-[var(--color-primary-light)]"
-                    : "text-[var(--color-text-light)] hover:text-[var(--color-accent)] hover:bg-[var(--color-primary-light)]"
+                    ? "text-[var(--color-zen-primary)] bg-[var(--color-zen-accent)]"
+                    : "bg-transparent text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)] hover:text-[var(--color-zen-primary)]"
                 }`
               }
             >

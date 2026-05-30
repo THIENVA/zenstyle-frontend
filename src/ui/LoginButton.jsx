@@ -6,11 +6,12 @@ export default function LoginButton() {
     <Button
       asChild
       variant="secondary"
-      className="rounded-none w-32 h-10 border-[var(--color-zen-accent)]
-      text-[var(--color-zen-accent)]
-      bg-transparent
-      hover:bg-[var(--color-zen-accent)]
+      size="lg"
+      className="rounded-none w-32 h-10 border-[var(--color-zen-primary)]
+      text-[var(--color-zen-text-light)]
+      bg-[var(--color-zen-accent)]
       hover:text-[var(--color-zen-primary)]
+      hover:bg-[var(--color-zen-accent)]
       font-[var(--font-logo)] text-sm tracking-wide"
     >
       <Link to="/dang-nhap">ĐĂNG NHẬP</Link>
