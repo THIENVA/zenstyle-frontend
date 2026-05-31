@@ -1,0 +1,28 @@
+{
+  "hero_slides": [
+    {
+      "id": 1,
+      "image": "/images/hero/slide-1.jpg",
+      "title": "Đẳng cấp trong từng đường kẻ",
+      "subtitle": "Trải nghiệm dịch vụ cắt tóc chuyên nghiệp",
+      "cta": "Đặt lịch ngay",
+      "cta_link": "/dat-lich"
+    },
+    {
+      "id": 2,
+      "image": "/images/hero/slide-2.jpg",
+      "title": "Phong cách định hình cá tính",
+      "subtitle": "Đội ngũ stylist được đào tạo chuyên sâu",
+      "cta": "Xem dịch vụ",
+      "cta_link": "/san-pham"
+    },
+    {
+      "id": 3,
+      "image": "/images/hero/slide-3.jpg",
+      "title": "Không gian thư giãn đẳng cấp",
+      "subtitle": "Hệ thống salon tiêu chuẩn 5 sao",
+      "cta": "Hệ thống salon",
+      "cta_link": "/nhan-vien"
+    }
+  ]
+}
