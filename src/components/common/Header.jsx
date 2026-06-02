@@ -25,7 +25,7 @@ export default function Header() {
           <img
             src="/public/ZenStyle.jpg"
             alt="ZenStyle"
-            className="h-17 w-auto object-contain"
+            className="h-16 w-auto object-contain"
             onError={(e) => {
               e.target.style.display = "none";
               e.target.nextSibling.style.display = "block";

@@ -2,27 +2,73 @@
   "hero_slides": [
     {
       "id": 1,
-      "image": "/images/hero/slide-1.jpg",
+      "image": "/images/hero/gioi_thieu.png",
       "title": "Đẳng cấp trong từng đường kẻ",
       "subtitle": "Trải nghiệm dịch vụ cắt tóc chuyên nghiệp",
-      "cta": "Đặt lịch ngay",
-      "cta_link": "/dat-lich"
+      "cta": "Về chúng tôi",
+      "cta_link": "/ve-chung-toi"
     },
     {
       "id": 2,
-      "image": "/images/hero/slide-2.jpg",
+      "image": "/images/hero/staffs.png",
       "title": "Phong cách định hình cá tính",
-      "subtitle": "Đội ngũ stylist được đào tạo chuyên sâu",
-      "cta": "Xem dịch vụ",
-      "cta_link": "/san-pham"
+      "subtitle": "Đội ngũ nhân viên được đào tạo chuyên sâu",
+      "cta": "Đội ngũ nhân viên",
+      "cta_link": "/nhan-vien"
     },
     {
       "id": 3,
-      "image": "/images/hero/slide-3.jpg",
+      "image": "/images/hero/khong_gian_thu_gian_dang_cap.png",
       "title": "Không gian thư giãn đẳng cấp",
       "subtitle": "Hệ thống salon tiêu chuẩn 5 sao",
-      "cta": "Hệ thống salon",
-      "cta_link": "/nhan-vien"
+      "cta": "Hệ thống salon"
+    },
+    {
+      "id": 4,
+      "image": "/images/hero/hairstyling.png",
+      "title": "Tạo mẫu tóc",
+      "subtitle": "Tạo mẫu tóc chuyên nghiệp",
+      "cta": "Dich vụ tạo mẫu tóc",
+      "cta_link": "/san-pham/hair-styling"
+    },
+    {
+      "id": 5,
+      "image": "/images/hero/skin_care.png",
+      "title": "Chăm sóc da",
+      "subtitle": "Chăm sóc da",
+      "cta": "Dich vụ chăm sóc da",
+      "cta_link": "/san-pham/skin-care"
+    },
+    {
+      "id": 6,
+      "image": "/images/hero/beautry_treatements.png",
+      "title": "Chăm sóc sắc đẹp",
+      "subtitle": "Chăm sóc sắc đẹp",
+      "cta": "Dich vụ chăm sóc sắc đẹp",
+      "cta_link": "/san-pham/beauty-treatment"
+    }
+  ],
+  "hair_cutting": [
+    {
+      "id": 1,
+      "image": "/public/images/hair_styling/hairstyling.png",
+      "name": "Cắt tóc Classic",
+      "description": "Kiểu tóc cổ điển, gọn gàng và lịch sự cho mọi dịp.",
+      "price": 100000
+    },
+    {
+      "id": 2,
+      "image": "/public/images/hair_styling/haircuttinglayer.png",
+      "name": "Cắt tóc Layer",
+      "description": "Tạo độ bồng bềnh tự nhiên, phù hợp với khuôn mặt dài.",
+      "price": 130000
+    },
+    {
+      "id": 3,
+      "image": "/public/images/hair_styling/haircuttingundercut.png",
+      "name": "Cắt tóc Undercut",
+      "description": "Phong cách hiện đại, cạo sát hai bên tạo điểm nhấn.",
+      "price": 170000
     }
   ]
 }
