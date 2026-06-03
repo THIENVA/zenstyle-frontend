@@ -18,10 +18,10 @@ const NAV_ITEMS = [
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-[var-(--background)]">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+    <header className="top-0 z-50  border-b border-[var(--color-zen-accent-hover)]">
+      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between ">
         {/* ── Logo ── */}
-        <NavLink to="/" className="shrink-0">
+        <NavLink to="/" className="shrink-0 ">
           <img
             src="/public/ZenStyle.jpg"
             alt="ZenStyle"
@@ -33,7 +33,7 @@ export default function Header() {
           />
         </NavLink>
         {/* ── Navbar ── */}
-        <nav className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-0">
+        <nav className="absolute left-1/2 -translate-x-1/2 hidden md:flex items-center gap-3">
           {NAV_ITEMS.map((item) =>
             item.type === "dropdown" ? (
               <NavDropdown key={item.label} item={item} />

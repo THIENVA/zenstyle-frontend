@@ -6,8 +6,8 @@ export default function NavButton({ item }) {
     <NavLink to={item.path}>
       {({ isActive }) => (
         <Button
-          variant="secondary"
-          className={`rounded-none w-32 h-10 border-r font-[var(--font-logo)] text-base tracking-wide px-3 border-[var(--color-zen-primary)]  text-[var(--color-zen-text-light)] bg-[var(--color-zen-accent)] ${isActive ? " text-[var(--color-zen-text-light)] " : " hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)] "}`}
+          variant="ghost"
+          className={`rounded-sm w-32 h-10 font-[var(--font-logo)] text-base tracking-wide  text-[var(--color-zen-primary)] bg-[var(--color-zen-accent-hover)] ${isActive ? " text-[var(--color-zen-text-light)] bg-[var(--color-zen-accent-hover)]" : " hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)] "}`}
         >
           {item.label}
         </Button>

@@ -20,8 +20,8 @@ export default function NavDropdown({ item }) {
     <div ref={ref} className="relative">
       <Button
         onClick={() => setOpen(!open)}
-        variant="secondary"
-        className={`rounded-none w-32 h-10 border-r items-center font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200 border-[var(--color-zen-primary)] text-[var(--color-zen-text-light)] bg-[var(--color-zen-accent)] ${open ? "text-[var(--color-zen-text-light)]" : "hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)]"}`}
+        variant="ghost"
+        className={`rounded-sn w-32 h-10 items-center font-[var(--font-logo)] text-base tracking-wide transition-colors duration-200  text-[var(--color-zen-primary)] bg-[var(--color-zen-accent-hover)] ${open ? "text-[var(--color-zen-primary)] bg-[var(--color-zen-accent-hover)]" : " hover:text-[var(--color-zen-primary)] hover:bg-[var(--color-zen-accent)]"}`}
       >
         {item.label}
         <svg

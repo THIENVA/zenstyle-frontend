@@ -6,5 +6,7 @@ const api = axios.create({
 
 export const getHeroSlides = () => api.get("/hero_slides");
 export const getHairCutting = () => api.get("/hair_cutting");
+export const getSkinCare = () => api.get("/skin_care");
+export const getBeautyTreatment = () => api.get("/beauty_treatment");
 
 export default api;
