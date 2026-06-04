@@ -9,4 +9,8 @@ export const getHairCutting = () => api.get("/hair_cutting");
 export const getSkinCare = () => api.get("/skin_care");
 export const getBeautyTreatment = () => api.get("/beauty_treatment");
 
+// Products
+export const getHairProduct = () => api.get("/hair-product");
+export const getSkinProduct = () => api.get("/skin-product");
+
 export default api;
