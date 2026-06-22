@@ -54,28 +54,32 @@
       "image": "/public/images/hair_styling/hairstyling.png",
       "name": "Cắt tóc Classic",
       "description": "Kiểu tóc cổ điển, gọn gàng và lịch sự cho mọi dịp.",
-      "price": 100000
+      "price": 100000,
+      "duration": 30
     },
     {
       "id": 2,
       "image": "/public/images/hair_styling/haircuttinglayer.png",
       "name": "Cắt tóc Layer",
       "description": "Tạo độ bồng bềnh tự nhiên, phù hợp với khuôn mặt dài.",
-      "price": 130000
+      "price": 130000,
+      "duration": 60
     },
     {
       "id": 3,
       "image": "/public/images/hair_styling/haircuttingundercut.png",
       "name": "Cắt tóc Undercut",
       "description": "Phong cách hiện đại, cạo sát hai bên tạo điểm nhấn.",
-      "price": 170000
+      "price": 170000,
+      "duration": 45
     },
     {
       "id": 4,
       "image": "/public/images/hair_styling/haircoloring.png",
       "name": "Nhuộm tóc hiện đại.",
       "description": "Màu tóc mới, phong cách mới.",
-      "price": 150000
+      "price": 150000,
+      "duration": 90
     }
   ],
   "skin_care": [
@@ -84,21 +88,24 @@
       "image": "/public/images/skin_care/skin_massage.png",
       "name": "Massage da mặt",
       "description": "Giúp da mặt hồi sinh.",
-      "price": 200000
+      "price": 200000,
+      "duration": 45
     },
     {
       "id": 3,
       "image": "/public/images//skin_care/white_skin.png",
       "name": "Làm trắng da mặt",
       "description": "Giúp da mặt trắng sáng.",
-      "price": 250000
+      "price": 250000,
+      "duration": 45
     },
     {
       "id": 4,
       "image": "/public/images//skin_care/skinmoituring.png",
       "name": "Dưỡng ẩm da mặt",
       "description": "Giúp da mặt căng tròn.",
-      "price": 250000
+      "price": 250000,
+      "duration": 45
     }
   ],
   "beauty_treatment": [
@@ -107,21 +114,24 @@
       "image": "/public/images/beauty_treatment/beauty_nail.png",
       "name": "Nails",
       "description": "Chăm sóc và trang điểm móng tay.",
-      "price": 100000
+      "price": 100000,
+      "duration": 45
     },
     {
       "id": 2,
       "image": "/public/images/beauty_treatment/beauty_earwax.png",
       "name": "Vệ sinh tai",
       "description": "Làm sạch và ngăn ngừa chất bẩn trong tai.",
-      "price": 120000
+      "price": 120000,
+      "duration": 20
     },
     {
       "id": 3,
       "image": "/public/images/beauty_treatment/beauty_hairwash.png",
       "name": "Gội đầu thư giãn",
       "description": "Thư giãn cùng mái tóc sạch, mượt mà.",
-      "price": 150000
+      "price": 150000,
+      "duration": 30
     }
   ],
   "hair_products": [
